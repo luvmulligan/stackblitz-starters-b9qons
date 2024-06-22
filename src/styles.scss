@@ -1,0 +1,64 @@
+// Customizing Bootstrap with Sass variables:
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+// $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+body {
+  background-image: url(https://i.pinimg.com/originals/57/ed/01/57ed0190bbf7e5d6d56a24b1f27ef3b3.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+.menu {
+  border: 2px red;
+  .button-wrapper {
+    border: 2px green;
+    width: 100%;
+    position: sticky;
+    button {
+      position: absolute;
+      background: transparent;
+      border: none;
+      text-decoration: underline;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .fa-play {
+      color: white;
+    }
+    .button {
+      display: block;
+      border: 2px white;
+      button {
+        display: inline-block;
+        padding-top: 1px;
+      }
+      i {
+        padding-left: 1px;
+      }
+    }
+    // #linea-tiempo {
+    //   top: 10rem;
+    //   left: 1rem;
+    //   + .fa-play {
+    //   }
+    // }
+    #proyecto {
+      left: 1.8rem;
+      top: 14rem;
+    }
+    #bases-filosoficas {
+      left: 5rem;
+      top: 18rem;
+    }
+    #recorrido {
+      left: 10rem;
+      top: 22rem;
+    }
+  }
+}
